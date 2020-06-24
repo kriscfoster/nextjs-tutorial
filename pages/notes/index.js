@@ -26,8 +26,8 @@ export default function Note() {
 
   return <Container>
     <div className={classes.root}>
-    { notes.map((note) => {
-      return <Link as={"/notes/" + note.name} href="/notes/[note]">
+    { notes.map((note, i) => {
+      return <Link key={i} as={"/notes/" + note.name} href="/notes/[note]">
         <Paper className={classes.paper}>
           <Typography>{note.name}</Typography>
         </Paper>
