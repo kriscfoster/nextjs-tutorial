@@ -1,3 +1,5 @@
+import Note from './notes/index';
+
 export default function Home() {
-  return <h1>Hello world!</h1>
+  return <Note/>
 }
