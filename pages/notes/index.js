@@ -9,8 +9,8 @@ const notes = [
 export default function Note() {
   return <div>
     <h1>Notes Page</h1>
-    { notes.map((note) => {
-      return <div>
+    { notes.map((note, i) => {
+      return <div key={i}>
         <Link as={"/notes/" + note.name} href="/notes/[note]">
           <a>{note.name}</a>
         </Link>
