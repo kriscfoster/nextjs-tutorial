@@ -1,3 +1,7 @@
+[Next.js Tutorial #1 | Pages & Router](https://youtu.be/FxTn3NhZO_I)
+
+[Next.js Tutorial #2 | Using Material UI React Components with Next.js](https://www.youtube.com/watch?v=mtGQe7rTHn8)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
