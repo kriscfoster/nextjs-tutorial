@@ -14,7 +14,10 @@ const notes = [
   { name: 'another-note' },
 ];
 
-export default function Note() {
+export default function Notes(props) {
+  const { notes } = props;
+  console.log(props);
+
   return <div>
     <Typography variant="h2">Notes Page</Typography>
     <TableContainer>
@@ -40,4 +43,12 @@ export default function Note() {
       </Table>
     </TableContainer>
   </div>
+}
+
+Notes.getInitialProps = async () => {
+  console.log('aaa');
+  const response = await fetch('http://localhost:3000/api/notes');
+  console.log(response);
+  const notes = await response.json();
+  return { notes };
 }
